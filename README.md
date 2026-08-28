@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🧩 AI Pipeline Builder — Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A visual, drag-and-drop no-code workflow editor built with React.js, TypeScript, and ReactFlow. Design complex AI pipelines through an intuitive node-based interface — no code required.
 
-## Available Scripts
+![Tech Stack](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🖱️ **Drag-and-drop** node-based pipeline editor using ReactFlow
+- 🔄 **Real-time DAG validation** — prevents invalid connections and infinite loops
+- 🧠 **Multiple node types** — LLM, Input, Output, Text nodes
+- 📦 **Zustand state management** — clean, scalable global state
+- 🔗 **REST API integration** — connects seamlessly with FastAPI backend
+- 📱 **Responsive UI** — works across screen sizes
+- ⚡ **Optimized rendering** — smooth performance with large pipelines
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Technology | Purpose |
+|---|---|
+| React.js | UI framework |
+| TypeScript | Type safety |
+| ReactFlow | Node-based pipeline editor |
+| Zustand | State management |
+| Tailwind CSS | Styling |
+| Axios | API communication |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js v18+
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+```bash
+# Clone the repo
+git clone https://github.com/Iamhc/Ai-pipeline-frontend.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Navigate to project
+cd Ai-pipeline-frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start development server
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will run at `http://localhost:3000`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔧 Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env.local` file in the root:
 
-### Code Splitting
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/
+│   ├── nodes/          # Custom node types (LLM, Input, Output, Text)
+│   ├── toolbar/        # Node toolbar and controls
+│   └── ui/             # Reusable UI components
+├── store/
+│   └── pipelineStore.ts  # Zustand global state
+├── hooks/              # Custom React hooks
+├── utils/              # Helper functions
+└── pages/              # Next.js pages
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔗 Backend
 
-### Advanced Configuration
+This frontend connects to the FastAPI backend:
+👉 [Ai-pipeline-backend](https://github.com/Iamhc/Ai-pipeline-backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📸 Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> Drag nodes from the toolbar → Connect them → Submit pipeline → Backend validates DAG in real-time
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Author
+
+**Himanshu Choudhary**
+- GitHub: [@Iamhc](https://github.com/Iamhc)
+- LinkedIn: [himanshu-choudhary](https://linkedin.com/in/himanshu-choudhary)
