@@ -3,6 +3,7 @@
 import { PipelineToolbar } from './toolbar';
 import { PipelineUI } from './ui';
 import { SubmitButton } from './submit';
+import { PipelineHistory } from './PipelineHistory';
 import './index.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <PipelineToolbar />
       <PipelineUI />
       <SubmitButton />
+      <PipelineHistory />
     </div>
   );
 }

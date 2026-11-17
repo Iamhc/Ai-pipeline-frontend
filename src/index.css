@@ -280,3 +280,6 @@ input:focus, textarea:focus, select:focus {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: #3a3a5e; }
+
+
+.submit-bar { display: flex; gap: 8px; justify-content: center; }

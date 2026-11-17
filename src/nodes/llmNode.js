@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useStore } from '../store';
 import { BaseNode, NodeField, NodeSelect } from './BaseNode';
+import { TokenBar } from './TokenBar';
 
 const MODEL_OPTIONS = [
   { value: 'GPT-4o', label: 'GPT-4o' },
@@ -43,6 +44,7 @@ export const LLMNode = ({ id, data }) => {
       <div style={{ fontSize: '10px', color: '#666', fontStyle: 'italic' }}>
         Connect system prompt + user prompt
       </div>
+      <TokenBar id={id} />
     </BaseNode>
   );
 };
